@@ -9,5 +9,11 @@ f([0, -4, 2, -3, 6, -1, 8, 6]) should return 22.
 
 def f(l):
     ##########YOUR CODE HERE##########
-    pass
+    a = sum(i for i in l if i % 2 == 0)
+    b = sum(i for i in l if i % 2 == 1)
+    c = b * (-1)
+    return a+c
+
+y = f(l)
+print(y)    
     ###########END CODE###############
