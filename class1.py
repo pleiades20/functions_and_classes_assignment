@@ -26,7 +26,7 @@ class Cafe:
         to the price argument.
         """
         ###############YOUR CODE HERE#############
-        pass
+        add_menu_item
         ##################END CODE################
 
     def add_stock(self, newstock):
