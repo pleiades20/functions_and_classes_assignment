@@ -1,5 +1,5 @@
 #########IMPORT LIBRARIES HERE IF NEEDED#######
-
+from collections import Counter
 ################END IMPORTS####################
 """
 Write a function that takes in a block of text (a string of words) as input and returns a dictionary where the keys are the unique words
