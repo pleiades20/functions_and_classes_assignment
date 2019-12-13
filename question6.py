@@ -9,5 +9,11 @@ letters unchanged. For example, f('Hello World 12') should return 'hELLO wORLD 1
 
 def f(s):
     ##########YOUR CODE HERE##########
-    pass
+    a = s.lower()
+    a = s.title()
+    a = s.swapcase()
+    return a
+
+y = f(s)
+print(y)
     ###########END CODE###############
