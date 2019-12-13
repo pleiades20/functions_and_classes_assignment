@@ -13,5 +13,11 @@ Note that the order of the key value pairs in the resulting dictionary does not 
 
 def f(s):
     ##########YOUR CODE HERE##########
-    pass
+    S1 = s.strip('!?')
+    S2 = S1.lower()
+    S_split = S2.split(' ')
+    return Counter(S_split)
+
+y = f(s)
+print(y)
     ###########END CODE###############
