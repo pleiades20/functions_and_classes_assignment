@@ -9,5 +9,11 @@ location. For example, f([1,2,3,2,3,1]) should return 4.
 """
 def f(l):
     ##########YOUR CODE HERE##########
-    pass
+    X = l[::-1]
+    a = len(X)-1
+    b = X.index(max(X))
+    return a-b
+
+y = f(l)
+print(y)
     ###########END CODE###############
