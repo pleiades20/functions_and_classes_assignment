@@ -1,5 +1,5 @@
 #########IMPORT LIBRARIES HERE IF NEEDED#######
-
+import numpy as np
 ################END IMPORTS####################
 """
 Write a function that returns both the sample mean and sample standard deviation of a list of numbers. Your function will calculate
@@ -13,7 +13,23 @@ for the equations to calculate the sample standard deviation. Make sure you use 
 standard deviation. 
 """
 
+# Comment
+"""
+Failed to see the website below.
+https://www.khanacademy.org/math/statistics-probability/summarizing-quantitative-data/variance-standard-deviation-sample/a/population-and-sample-standard-deviation-review
+"""
+
 def f(l):
     ##########YOUR CODE HERE##########
-    pass
+    A = np.array(l)
+    
+    S = sum(A)
+    L = len(A)
+    m = S/L
+    
+    sd = np.std(A)
+    return m, sd
+
+y = f(l)
+print(y)
     ###########END CODE###############
