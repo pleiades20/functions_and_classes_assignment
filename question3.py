@@ -16,5 +16,14 @@ return None, None.
 
 def f(x1, y1, x2, y2):
     ##########YOUR CODE HERE##########
-    pass
+    try:
+        m = (y2 - y1) / (x2 - x1)
+        b = y1 - m * x1
+    except:
+        return None, None
+    
+    return m,b
+        
+y = f(x1, y1, x2, y2)
+print(y)
     ###########END CODE###############
