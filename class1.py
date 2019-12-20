@@ -26,7 +26,7 @@ class Cafe:
         to the price argument.
         """
         ###############YOUR CODE HERE#############
-        add_menu_item
+        self.menu[item] = price
         ##################END CODE################
 
     def add_stock(self, newstock):
@@ -38,7 +38,7 @@ class Cafe:
         a key in the cafe stock that represents that item, and add the corresponding number in newstock to it.
         """
         ###############YOUR CODE HERE#############
-        pass
+        self.stock.append(newstock)
         ##################END CODE################
 
 
@@ -79,5 +79,7 @@ if __name__ == '__main__':
     """
     sbux = Cafe({'coffee':2,'mocha':3,'bagel':2.5}, {'coffee':10, 'mocha':5, 'bagel':7, 'tea':20})
     #########CREATE TEST CASES HERE###########
-    pass
+    sbux.add_menu_item('coffee',3)
+    print(sbux.menu)
+    print(sbux.stock)
     ##########END TEST CASES##################
